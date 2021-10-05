@@ -1,0 +1,27 @@
+<body style="background-color:pink">
+
+Version  0.0.6
+
+<h2 align=center> t1a05 input output by Josh </h2>
+
+<a href="https://ww.wschool">Good reference to input output
+ javascript innerHTML value by Josh</a>
+
+<h4> Example input output</h4>
+<pre>
+	let myin01 = document.getElementById('myNum01').value
+	document.getElementById('myDiv01').innerHTML =
+	Myin01 + ' squared = ' + myin01*myin01 
+</pre>
+
+<h4 Example of working code</h4>
+
+<input id="myNum01" type=number value="4" ><br>
+
+<input type=button value="myEvent square" onclick="{
+	let myin01 = document.getElementById('myNum01').value
+	document.getElementById('myDiv01').innerHTML =
+		myin01 + ' squared = ' + myin01*myin01
+}"><br>
+
+<div id="myDiv01">bruh</div>
