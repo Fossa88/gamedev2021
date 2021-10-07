@@ -1,5 +1,5 @@
 <body style="background-color:pink">
-<h5><font-color:"red">Version 0.0.6</font></h5>
+<h5><font-color:"red">Version 0.0.7</font></h5>
 <h1 align=center> T1ao4 CSS by Joshua</h1>
 
 Reference link
@@ -36,8 +36,20 @@ advanced see if you can move the textarea</textarea><br>
 
 <div id="mydiv01">...</div>
 
-<input type=button value=change onclick="{
-	document.getElementById('mydiv02').innerHTML = 'Using the document get command we can move the text by assigning it an ID then moving it over a certain amount of pixels'
+<input type=button value=code onclick="{
+	document.getElementById('mydiv02').innerHTML = '
+				       <pre>
+				       <textarea id="myta1" style="position:relative; left:0; top:0; width:200; height:50;">
+					advanced see if you can move the textarea</textarea><br>
+
+					<input type=button value=move onclick="{
+						document.getElementById('mydiv01').value = 'I got it to move'
+						document.getElementById('myta1').style.left = '100px'
+       					</pre>'
+}">
+
+<input type=button value=close onclick="{
+	document.getElementById('mydiv02').innerHTML = '.'
 }">
 	
 <div id="mydiv02">.</div>
