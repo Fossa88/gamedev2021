@@ -1,11 +1,11 @@
 <body style="background-color:pink">
 
-Version  0.0.6
+Version  0.0.9
 
 <h2 align=center> t1a05 input output by Josh </h2>
 
-<a href="https://ww.wschool">Good reference to input output
- javascript innerHTML value by Josh</a>
+<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference to input output
+ javascript innerHTML value</a>
 
 <h4> Example input output</h4>
 <pre>
@@ -14,7 +14,7 @@ Version  0.0.6
 	Myin01 + ' squared = ' + myin01*myin01 
 </pre>
 
-<h4 Example of working code</h4>
+<h4> Example of working code </h4>
 
 <input id="myNum01" type=number value="4" ><br>
 
@@ -24,4 +24,57 @@ Version  0.0.6
 		myin01 + ' squared = ' + myin01*myin01
 }"><br>
 
-<div id="myDiv01">bruh</div>
+<div id="myDiv01">.</div>
+
+<input id="myNum09" type=number value="1">
+
+<input id="myNum10" type=number value="2"><br>
+
+<input type=button value="myEvent Addition" onclick="{
+	let myin09 = parseFloat (document.getElementById('myNum09').value)
+	let myin10 = parseFloat (document.getElementById('myNum10').value)
+	let myans04 = myin09 + myin10
+	document.getElementById('myDiv06').innerHTML = myans04
+}"><br> 
+
+<div id="myDiv06">.</div>
+
+<input id="myNum06" type=number value="8">
+
+<input id="myNum05" type=number value="5"><br>
+
+<input type=button value="myEvent Subtract" onclick="{
+	let myin06 = parseFloat(document.getElementById('myNum06').value)
+	let myin05 = parseFloat(document.getElementById('myNum05').value)
+	let myans01 = myin06 - myin05 
+	document.getElementById('myDiv04').innerHTML = myans01
+}"><br> 
+
+<div id="myDiv04">.</div>
+
+<input id="myNum03" type=number value="6" >
+
+<input id="myNum04" type=number value="4" ><br>
+
+<input type=button value="myEvent Multiplication" onclick="{
+	let myin03 = parseFloat (document.getElementById('myNum03').value)
+	let myin04 = parseFloat (document.getElementById('myNum04').value)
+	let myans02 = myin03 * myin04
+	document.getElementById('myDiv03').innerHTML = myans02
+}"><br> 
+
+<div id="myDiv03">.</div>
+
+<input id="myNum07" type=number value="6" >
+
+<input id="myNum08" type=number value="4" ><br>
+
+<input type=button value="myEvent Division" onclick="{
+	let myin07 = parseFloat (document.getElementById('myNum07').value)
+	let myin08 = parseFloat (document.getElementById('myNum08').value)
+	let myans03 = myin07 / myin08
+	document.getElementById('myDiv05').innerHTML = myans03
+}"><br> 
+
+<div id="myDiv05">.</div>
+
