@@ -1,0 +1,45 @@
+<body style="background-color: magenta" </body></style>
+
+<h5> Version 0.0.1 </h5>
+
+<h1 align=center> t1a06 Variables </h1>
+
+<a href="https://www.w3schools.com/js/js_variables.asp"> Good reference to Variables in javaScript and other languages</a><br><br>
+
+Other languages use: Bool, Int, Float, Char, String, Int_8, Int_16 etc<br>
+
+Note: Javascript does use var and let for variables<br>
+For global variables Mr. Ellis perfers to use document.myVarName
+
+<h4> Example input output code</4>
+<pre>
+	let myInt01 = document.getElementById('myText01').value
+	document.getElementById('myDiv01').innerHTML = myInt01
+</pre>
+
+<h4> Example of working code</h4>
+
+<input id="myText01" type=text value="the dog "><br>
+
+<input type=button value="show variable" onclick="{
+	let myInt01 = document.getElementById('myText01').value
+	document.getElementById('myDiv01').innerHTML = myInt01
+}"><br>
+
+<input type=button value="Using no variable" onclick="{
+	document.getElementById('myDiv01').innerHTML =
+		document.getElementById('myText01').value
+}"><br>
+
+<div id="myDiv01">.</div>
+
+<h4> Input your age </h4>
+
+<input id="myNum01" type=number value="0"><br>
+
+<input type=button value="Your age" onclick="{
+	let myInt02 = document.getElementById('myNum01').value
+	document.getElementById('myDiv02').innerHTML = 'You are ' + myInt02 + ' years old'
+}"><br>
+
+<div id="myDiv02">.</div>
