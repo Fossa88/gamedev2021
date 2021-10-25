@@ -1,0 +1,48 @@
+<body style="background-color:pink">
+<h5><font-color:"red">Version 0.0.10</font></h5>
+<h1 align=center> T1ao4 CSS by Joshua</h1>
+
+Reference link
+<a
+href="https://www.w3schools.com/cssref/default.asp">W3School</a>
+<br>
+
+Properly done with a .css file listing all css commands for your website<br>
+
+Another way to do CSS (Cascading style sheets: detenube colors locations extra effects on the tags on your web page)<br>
+
+Here is typical document style
+<pre>
+b {
+	color: #00ff00
+}
+</pre><br>
+
+I do CSS inside the tag. It overpowers all other methods<br>
+<b> this is bold </b><br>
+<b id="myb1" style="color:#00ff00; background-color:blue;"> this is bold</b><br><br>
+<input type=button value=change onclick="{
+	document.getElementById('myb1').style.color = 'red'
+	document.getElementById('myb1').style.backgroundColor = 'yellow'
+}"><br><br>
+
+<textarea id="myta1" style="position:relative; left:0; top:0; width:200; height:50;">
+advanced see if you can move the textarea</textarea><br>
+
+<input type=button value=move onclick="{
+	document.getElementById('mydiv01').value = 'I got it to move'
+	document.getElementById('myta1').style.left = '100px'
+}">
+
+<div id="mydiv01">...</div><br><br>
+
+<input type=button value=open onclick="{
+	document.getElementById('mydiv02').innerHTML = 'This was done by assigning an ID to the text box then using style left 100px to move the text box'
+}">
+
+<input type=button value=close onclick="{
+	document.getElementById('mydiv02').innerHTML = '.'
+}">
+	
+<div id="mydiv02">.</div>
+
