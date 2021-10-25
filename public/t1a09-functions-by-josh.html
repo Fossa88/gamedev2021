@@ -12,6 +12,15 @@ function myExampleFunction(){
 
 </script>
 
+<script>
+
+function myExampleFunction02(){
+	let myIn02 = document.getElementById('mydiv02').innerHTML = Yes it does!
+	return myIn02
+}
+
+</script>
+
 <h5> Version 0.0.3 </h5>
 
 <h2 align=center>t1a09 Functions by Josh</h2>
@@ -36,4 +45,10 @@ Function myGrabNumber(){
 	document.getElementById('myDiv01').innerHTML = myExampleFunction()
 }">
 
-<div id="myDiv01">.</div>
+<div id="myDiv01">.</div><br>
+
+<input type=button value="does it work?" onclick="{
+	document.getElementById('myDiv02').innerHTML = myExampleFunction02
+}">
+
+<div id="myDiv02">.</div><br>
