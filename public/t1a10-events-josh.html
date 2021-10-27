@@ -39,7 +39,34 @@ document.getElementById('myText01').value
 
 <input type=button value="Move your mouse over this" onMouseMove="{
 	document.getElementById('myDiv02').innerHTML = 'Your mouse moved over the button'
+}"		onclick="{
+	document.getElementById('myDiv02').innerHTML = 'Bruh'
 }">
 
-<div id="myDiv02">.</div>
+<div id="myDiv02">.</div><br>
 
+<input type=button value="Click the button" onClick="{
+	document.getElementById('myDiv03').innerHTML = 'Now type any letter'
+}" 		onkeydown="{	
+	document.getElementById('myDiv03').innerHTML = 'That is pretty cool eh'
+}">
+
+<div id="myDiv03">.</div><br>
+
+<input draggable="true" type=button value="drag me" ondrag="{
+	document.getElementById('myDiv04').innerHTML = 'you dragged the button'
+}">
+
+<div id="myDiv04">.</div><br>
+
+<input type=button value="double click the button" ondblclick="{
+	document.getElementById('myDiv05').innerHTML = 'you double clicked the button'
+}">
+
+<div id="myDiv05">.</div><br>
+
+<input type=button value="scroll on the button" onscroll="{
+	document.getElementById('myDiv06').innerHTML = 'You scrolled'
+}">
+
+<div id="myDiv06">.</div>
