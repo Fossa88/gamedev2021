@@ -65,8 +65,41 @@ document.getElementById('myText01').value
 
 <div id="myDiv05">.</div><br>
 
-<input type=button value="scroll on the button" onscroll="{
-	document.getElementById('myDiv06').innerHTML = 'You scrolled'
+<input type=text value="Click on and off the text box" onfocus="{
+	document.getElementById('myDiv06').innerHTML = 'The text box is focused'
+}"		onblur="{
+document.getElementById('myDiv06').innerHTML = 'The text box is not focused'
 }">
 
-<div id="myDiv06">.</div>
+<div id="myDiv06">The text box is not focused</div><br>
+
+<input type=button value="Scroll down or up over this button" onwheel="{
+	document.getElementById('myDiv07').innerHTML = 'You scrolled'
+}">
+
+<div id="myDiv07">.</div><br>
+
+<input type=text value="Select this text" onselect="{
+	document.getElementById('myDiv08').innerHTML = 'You selected the text'
+}">
+
+<div id="myDiv08">.</div><br>
+
+<input type=text value="Hello" oncopy="{
+	document.getElementById('myDiv09').innerHTML = 'The text has been copied to clipboard'
+}">
+
+<div id="myDiv09">Copy the text in this box</div><br>
+
+<input type=text value="" onpaste="{
+	document.getElementById('myDiv10').innerHTML = 'The text has been pasted'
+}">
+
+<div id="myDiv10">Paste the text into this box</div><br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
