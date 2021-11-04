@@ -18,11 +18,10 @@ Arrays are stored numbered variables
 
 <h4> Example Working Array Code </h4>
 
+
 Max Array Entry: <input type=text id="myText01" value="3"><br>
 
-You can manually choice the text and position of the loop: <input type=text id="myText02" value="bruh">
-
-<input type=number id="myNum01" value="5"><br>
+Effect a certain loop: <input type=text id="myText02" value="bruh"><input type=number id="myText03" value="5"><br>
 
 <input type=button value="Example onClick" onClick="{
 	let myTemp = document.getElementById('myText01').value
@@ -33,7 +32,8 @@ You can manually choice the text and position of the loop: <input type=text id="
 	myArray[0] = 'Fred'
 	myArray[1] = 'Mary'
 	myArray[2] = 'Zizzy'
-	myArray[document.getElementById('myNum01').value] = document.getElementById('myText02').value
+	myArray[document.getElementById('myText03').value] = document.getElementById('myText02').value
+	myArray[5] = 'Bingus'
 	
 	for (let myLoop=0; myLoop < myTemp; myLoop++){
 		mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] +'<br>'
