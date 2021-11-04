@@ -46,7 +46,7 @@ if (myhour < 18) {
 
 <div id="myDiv01">...</div><br>
 
-<h4><b> To hear a secret message you must be over 18 years old, please input age below </h4></b>
+<h4><b> To hear a secret message you must be over 18 years old, please input age below </h3></b>
 
 <input id="myNum02" type=number value="0"><br>
 
@@ -58,4 +58,29 @@ if (myhour < 18) {
 		document.getElementById('myDiv02').innerHTML = 'The secret message is bruh'}
 }">
 
-<div id="myDiv02">.</div>
+<div id="myDiv02">.</div><br>
+
+<input type=button value="Press for a 1 in 10 chance" onclick="{
+	let myRNG01 = Math.floor((Math.random() * 10) + 1);
+		document.getElementById('myDiv03').innerHTML = myRNG01;
+	if (myRNG01 == 5){
+		document.getElementById('myDiv04').innerHTML = 'You had a 1 in 10 chance of getting a 5'
+	} else {
+		document.getElementById('myDiv04').innerHTML = 'You got the wrong number'
+	}	
+}">
+
+<div id="myDiv03">.</div>
+<div id="myDiv04">.</div><br>
+
+<input id="myNum03" type=number value="0"><br>
+
+<input type=button value="Determine if number is odd or even" onclick="{
+	if (document.getElementById('myNum03').value % 2 == 1){
+		document.getElementById('myDiv05').innerHTML = 'Your number is odd';
+		} else {
+		document.getElementById('myDiv05').innerHTML = 'Your number is even';
+		}
+}">
+
+<div id="myDiv05">.</div>
