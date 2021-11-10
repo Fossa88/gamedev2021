@@ -1,0 +1,49 @@
+<body style="background-color: pink"></style></body>
+
+Version 0.0.1
+
+<h2 align=center>T2a02 Objects</h2>
+
+<a href=""> Good Reference to Javascript Objects</a><br>
+
+Objects are stored named variables
+
+<h4> Example of Objects Code </h4>
+<pre>
+let myPerson = {
+	"firstName": "John",
+	"lastName": "Doe",
+	"age": 50,
+	"eyeColor": "blue"
+}
+</pre>
+
+<h4> Example Working Objects Code </h4>
+
+Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
+
+
+<input type=button value="Example Object Set and Show" onClick="{
+
+	let myPerson = {
+		'firstName': 'John',
+		'lastName': 'Doe',
+		'Sex': 'Male',
+		'age': 50,
+		'eyeColor': 'Blue',
+		'bodyType': 'Skinny'
+	}
+	
+	document.getElementById('myDiv01').innerHTML = '<b>myPerson Object has properties: </b><br>'
+	document.getElementById('myDiv01').innerHTML += '<b>First Name: </b>' + myPerson.firstName + '<br>'
+	document.getElementById('myDiv01').innerHTML += '<b>Last Name: </b>' + myPerson.lastName + '<br>'
+	document.getElementById('myDiv01').innerHTML += '<b>Sex: </b>' + myPerson.Sex + '<br>'
+	document.getElementById('myDiv01').innerHTML += '<b>Age: </b>' + myPerson.age + '<br>'
+	document.getElementById('myDiv01').innerHTML += '<b>Body Type: </b>' + myPerson.bodyType + '<br>'
+	document.getElementById('myDiv01').innerHTML += '<b>Eye Colour: </b>' + myPerson.eyeColor + '<br>'
+
+}"><br>
+<table border=2>
+<tr><td><div id="myDiv01">.</div></td></tr> 
+</table
+<br>
