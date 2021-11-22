@@ -1,8 +1,7 @@
 <body style="background-color: pink"></body>
 
-<html><head></head><body><h1 align="center">t2a06-spy-name.html</h1>
+<html><head></head><body><h1 align="center">t2a06 spy</h1>
 <textarea id="myArea01" rows="4" cols="70">Hello how are you</textarea><br> 
-
 
 <input type="button" value="encrypt" onclick="{
    let myTemp = ''
@@ -40,8 +39,6 @@
    }
    document.getElementById('myArea02').value = myString.join('')
 }"><br><br>
-
-
 
 <textarea id="myArea02" rows="4" cols="70"></textarea><br> 
 
@@ -85,5 +82,22 @@
 
 <textarea id="myArea03" rows="4" cols="70"></textarea><br> 
 
+<h1 align=center>Base64</h1>
 
-</body></html>
+<textarea id="myText01" rows="4" cols="70">Hello i am good</textarea><br><br>
+
+<input type=button value="encrypt" onclick="{
+	var myString02 = document.getElementById('myText01').value;
+	var myEncoder01 = btoa(myString02);
+	document.getElementById('myText02').innerHTML = myEncoder01;
+}"><br>
+
+<textarea id="myText02" rows="4" cols="70"></textarea><br><br>
+
+<input type=button value="decrypt" onclick="{
+	var myString03 = document.getElementById('myText02').value;
+	var myEncoder02 = atob(myString03);
+	document.getElementById('myText03').innerHTML = myEncoder02;
+}"><br>
+	
+<textarea id="myText03" rows="4" cols="70"></textarea>
