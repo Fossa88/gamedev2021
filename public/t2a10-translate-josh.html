@@ -1,0 +1,28 @@
+<body style="background-color: pink"></style>
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<script>
+    function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,de,ru', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+
+    }
+</script>
+
+
+
+<h1 align=center>t2a10 Translate</h1>
+
+<textarea id="myText01" placeholder="Type what you want to say, then press submit"></textarea><br>
+
+<input type=button value="submit" onclick="{
+	document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
+}">
+
+<div id="google_translate_element">Word(s) submitted: <div id="myDiv01"></div></div>
+
+<input  type="button" value="initilize speak" onclick="{  
+   let myVoice = 'Russian Female'
+   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+}"><br><br>
