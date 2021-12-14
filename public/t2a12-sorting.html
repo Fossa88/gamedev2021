@@ -13,7 +13,7 @@
   }
 }">
 
-<input type=button value="Show" onclick="{
+<input type=button value="Show" id="myShow" onclick="{
   let myTemp = ''
   for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
      myTemp += myLoop + ' = '+ myCards[myLoop] + '<br>'
@@ -22,10 +22,17 @@
 }">
 
 <input type=button value="Sort" onclick="{
-  let myTemp = 0
+  let myTemp01 = 0
   for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
-     myCards[myLoop] = 0 // you do this stuff
-  }
+		if	(myCards[myLoop] >= myCards[myLoop+1]) {
+			myTemp01 = myCards[myLoop]
+			myCards[myLoop] = myCards[myLoop+1]
+			myCards[myLoop+1] = myTemp01
+			
+		} else {
+			myTemp01 = myTemp01
+		}
+	}
 }">
 
 <dir id="myDiv01"></div>
