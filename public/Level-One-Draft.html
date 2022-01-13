@@ -1,12 +1,20 @@
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://piskel-imgstore-b.appspot.com/img/ccfa13a3-5855-11ec-befe-f7c32817cae1.gif">
 <br><br><br><br><br><br>
 
+<input style="position: absolute; top:31px; left:30px;" value="Click Button to Start" type=button onclick="{
+    let myTimer = 120;
+    window.setInterval(
+        function () {
+            myTimer = myTimer - 1;
+            document.getElementById('myTimer').innerHTML = 'Time Remaining: ' + myTimer;
+}, 1000);
+}">
+
+<div style="position: absolute; left:33px; top:50px;" id="myTimer"></div>
+
 <script>
 
     // global variables here
-    let myGlobalX = 0
-    let myClock
-
 
     // global functions here
     function myHitOther(my1,my2){
@@ -161,19 +169,12 @@
    }
 }">
 
-<img id="myGoon01" style="position:absolute; width:48px; height:48px; left:770px; top:400px;" src="https://piskel-imgstore-b.appspot.com/img/5cd8dca3-7261-11ec-bbcc-e92d835efd3f.gif"></img>
+<img id="myGoon01" style="position:absolute; width:48px; height:48px; left:770px; top:400px;" src="https://piskel-imgstore-b.appspot.com/img/5cd8dca3-7261-11ec-bbcc-e92d835efd3f.gif" alt="">
 
-<img id ="myBullet01" style="position:absolute; width:32px; height:32px; left:600px; top:300px;" src="https://piskel-imgstore-b.appspot.com/img/e186aab8-7265-11ec-9538-e92d835efd3f.gif"></img>
+<img id ="myBullet01" style="position:absolute; width:32px; height:32px; left:600px; top:300px;" src="https://piskel-imgstore-b.appspot.com/img/e186aab8-7265-11ec-9538-e92d835efd3f.gif" alt="">
 
-<img id="myBorderTop" style="position:absolute; width:1600px; height:32px; left:0px; top:0px;" src="https://piskel-imgstore-b.appspot.com/img/26bb5d51-73e9-11ec-bc06-6598e1398545.gif"> </img>
-<img id="myBorderBottom" style="position:absolute; width:1600px; height:32px; left:0px; top:725px;" src="https://piskel-imgstore-b.appspot.com/img/d778e519-73e9-11ec-8f89-b70e43f4fd09.gif"></img>
-<img id="myBorderLeft" style="position:absolute; width:32px; height:725px; left:0px; top:0px;" src="https://piskel-imgstore-b.appspot.com/img/3fca16ca-73ea-11ec-93a3-b70e43f4fd09.gif"></img>
-<img id="myBorderRight" style="position:absolute; width:32px; height:725px; left:1568px; top:0px;" src="https://piskel-imgstore-b.appspot.com/img/3fca16ca-73ea-11ec-93a3-b70e43f4fd09.gif"></img>
+<img id="myBorderTop" style="position:absolute; width:1600px; height:32px; left:0; top:0;" src="https://piskel-imgstore-b.appspot.com/img/26bb5d51-73e9-11ec-bc06-6598e1398545.gif" alt="">
+<img id="myBorderBottom" style="position:absolute; width:1600px; height:32px; left:0; top:725px;" src="https://piskel-imgstore-b.appspot.com/img/d778e519-73e9-11ec-8f89-b70e43f4fd09.gif" alt="">
+<img id="myBorderLeft" style="position:absolute; width:32px; height:725px; left:0; top:0;" src="https://piskel-imgstore-b.appspot.com/img/3fca16ca-73ea-11ec-93a3-b70e43f4fd09.gif" alt="">
+<img id="myBorderRight" style="position:absolute; width:32px; height:725px; left:1568px; top:0;" src="https://piskel-imgstore-b.appspot.com/img/3fca16ca-73ea-11ec-93a3-b70e43f4fd09.gif" alt="">
 
-<input style="position:absolute; left:0px; top:0px;" id="myGameStart01" type=button value="Click to Start Game" onlclick="{
-    document.getElementById('myDiv01').innerHTML = bruh
-
-}">
-
-<div style="position:absolute; left:70px; top:70px;" id="myDiv01">.</div>
-</body>
