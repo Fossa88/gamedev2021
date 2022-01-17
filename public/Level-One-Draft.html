@@ -1,22 +1,30 @@
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://piskel-imgstore-b.appspot.com/img/ccfa13a3-5855-11ec-befe-f7c32817cae1.gif">
 <br><br><br><br><br><br>
 
-<input style="position: absolute; top:31px; left:30px;" value="Click Button to Start" type=button onclick="{
-    let myTimer = 120;
-    window.setInterval(
-        function () {
-            myTimer = myTimer - 1;
-            document.getElementById('myTimer').innerHTML = 'Time Remaining: ' + myTimer;
-}, 1000);
-}">
+<img id="myGoon01" style="position:absolute; width:48px; height:48px; left:770px; top:400px;" src="https://piskel-imgstore-b.appspot.com/img/5cd8dca3-7261-11ec-bbcc-e92d835efd3f.gif" alt="">
 
-<div style="position: absolute; left:33px; top:50px;" id="myTimer"></div>
+<img id ="myBullet01" style="position:absolute; width:32px; height:32px; left:600px; top:300px;" src="https://piskel-imgstore-b.appspot.com/img/e186aab8-7265-11ec-9538-e92d835efd3f.gif" alt="">
+
+<img id="myBorderTop" style="position:absolute; width:1600px; height:32px; left:0; top:0;" src="https://piskel-imgstore-b.appspot.com/img/26bb5d51-73e9-11ec-bc06-6598e1398545.gif" alt="">
+<img id="myBorderBottom" style="position:absolute; width:1600px; height:32px; left:0; top:725px;" src="https://piskel-imgstore-b.appspot.com/img/d778e519-73e9-11ec-8f89-b70e43f4fd09.gif" alt="">
+<img id="myBorderLeft" style="position:absolute; width:32px; height:725px; left:0; top:0;" src="https://piskel-imgstore-b.appspot.com/img/3fca16ca-73ea-11ec-93a3-b70e43f4fd09.gif" alt="">
+<img id="myBorderRight" style="position:absolute; width:32px; height:725px; left:1568px; top:0;" src="https://piskel-imgstore-b.appspot.com/img/3fca16ca-73ea-11ec-93a3-b70e43f4fd09.gif" alt="">
 
 <script>
 
-    // global variables here
+    function myGlobalTimer (){
+    let myTimer01 = 120;
+    window.setInterval(
+        function () {
+            myTimer01 = myTimer01 - 1;
+            document.getElementById('myTimer01').innerHTML = 'Time Remaining: ' + myTimer01
+        }, 1000);}
 
-    // global functions here
+    let myTimer01 = document.getElementById('myTimer01').value
+
+    // Bullet Stuff
+
+    // global functions
     function myHitOther(my1,my2){
         left1   = parseInt(document.getElementById(my1).style.left)
         right1  = left1 + parseInt(document.getElementById(my1).style.width)
@@ -57,7 +65,10 @@
             document.location.reload(true);
         }
         // more if statements here
-
+        if (myTimer01 <= 118) {
+            window.setInterval(
+                document.getElementById('myBullet01').style.left = parseInt(document.getElementById('myBullet01').style.left) + 100 + 'px'
+                , 100);}
     }
 
 
@@ -169,12 +180,12 @@
    }
 }">
 
-<img id="myGoon01" style="position:absolute; width:48px; height:48px; left:770px; top:400px;" src="https://piskel-imgstore-b.appspot.com/img/5cd8dca3-7261-11ec-bbcc-e92d835efd3f.gif" alt="">
+<input id='myButton01' style="position: absolute; top:31px; left:30px;" value="Click Button to Start" type=button onclick="{
+    document.getElementById('myButton01').style.left = parseInt(document.getElementById('myButton01').style.left) - 1000 + 'px'
+    myGlobalTimer()
+    myfunc01()
+}">
 
-<img id ="myBullet01" style="position:absolute; width:32px; height:32px; left:600px; top:300px;" src="https://piskel-imgstore-b.appspot.com/img/e186aab8-7265-11ec-9538-e92d835efd3f.gif" alt="">
+<div style="position: absolute; left:33px; top:31px;" id="myTimer01"></div>
 
-<img id="myBorderTop" style="position:absolute; width:1600px; height:32px; left:0; top:0;" src="https://piskel-imgstore-b.appspot.com/img/26bb5d51-73e9-11ec-bc06-6598e1398545.gif" alt="">
-<img id="myBorderBottom" style="position:absolute; width:1600px; height:32px; left:0; top:725px;" src="https://piskel-imgstore-b.appspot.com/img/d778e519-73e9-11ec-8f89-b70e43f4fd09.gif" alt="">
-<img id="myBorderLeft" style="position:absolute; width:32px; height:725px; left:0; top:0;" src="https://piskel-imgstore-b.appspot.com/img/3fca16ca-73ea-11ec-93a3-b70e43f4fd09.gif" alt="">
-<img id="myBorderRight" style="position:absolute; width:32px; height:725px; left:1568px; top:0;" src="https://piskel-imgstore-b.appspot.com/img/3fca16ca-73ea-11ec-93a3-b70e43f4fd09.gif" alt="">
 
