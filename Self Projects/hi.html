@@ -1,0 +1,38 @@
+<body style="background-color: magenta">
+
+<h2 align=center>Click the Button Saif</h2>
+
+<input type="button" value="Click Me XD" onclick="{
+	document.getElementById('myDiv01').innerHTML = 'Saif you suck at coding'
+}">
+
+<div id="myDiv01">.</div>
+
+<div id="myDiv02" ondrop="drop" ondragover="allowDrop">.</div>
+
+<a style="color: red"href="https://stackoverflow.com/questions/21134023/drag-and-drop-images-from-one-div-to-another-div/21134304">Webpage I learned the code from</a>
+<br>
+<a style="color:teal"href="https://www.youtube.com/">Youtube link XD</a>
+
+<h2> Using Script Varaible Values</h2>
+<h4><b>If the number is in the negative the colour will be green, if the numbers in the positive it will be blue</b></h4>
+
+<input type="number" id="myNumRam" value="0">
+
+<input type="button" value="refresh" onclick="{
+	if (document.getElementById('myNumRam').value > -1) {
+		document.getElementById('myDiv03').style.color = 'blue'
+		} else {
+			document.getElementById('myDiv03').style.color = 'green'
+		}
+	}">
+
+
+<div style="color: black" id="myDiv03">I will change colour</div>
+<br>
+
+<input type="button" value="Value Tester" onclick="{
+	document.getElementById('myDiv04').innerHTML = document.getElementById('myNumRam').value
+}">
+
+<div id="myDiv04">.</div>
