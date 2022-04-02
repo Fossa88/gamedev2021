@@ -52,10 +52,11 @@ if (myhour < 18) {
 
 <input type=button value="confirm" onclick="{
 	let myIn02 = parseFloat(document.getElementById('myNum02').value)
-	if (myIn02 <== 18){
+	if (myIn02 <= 18){
 		document.getElementById('myDiv02').innerHTML = 'You are under 18 so you cannot read the secret message'
 	} else {
-		document.getElementById('myDiv02').innerHTML = 'The secret message is bruh'}
+		document.getElementById('myDiv02').innerHTML = 'The secret message is bruh'
+		 }
 }">
 
 <div id="myDiv02">.</div><br>
