@@ -62,7 +62,7 @@ if (myhour < 18) {
 <div id="myDiv02">.</div><br>
 
 <input type=button value="Press for a 1 in 100 chance" onclick="{
-	let myRNG01 = Math.floor((Math.random() * 100) + 1);
+	let myRNG01 = Math.floor((Math.random() * 10) + 1);
 		document.getElementById('myDiv03').innerHTML = myRNG01;
 	if (myRNG01 == 5){
 		document.getElementById('myDiv04').innerHTML = 'You had a 1 in 10 chance of getting a 5'
